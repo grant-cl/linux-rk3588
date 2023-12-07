@@ -19,9 +19,6 @@ jobs:
           - 6.7-rc4-rk3588
 
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-
       - name: Install dependencies
         shell: bash
         run: |
@@ -43,6 +40,10 @@ jobs:
             xz-utils fakeroot parted udev dosfstools uuid-runtime git-lfs \
             device-tree-compiler bc debhelper libelf-dev pkg-config \
             zlib1g-dev uuid-dev libblkid-dev git -y
+
+      - name: Checkout code
+        uses: actions/checkout@v4
+
 
       - name: Build ${{ matrix.kernel }}
         shell: bash
