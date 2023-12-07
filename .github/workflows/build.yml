@@ -30,7 +30,7 @@ jobs:
             libelf-dev:arm64 uuid-dev:arm64 libudev-dev:arm64 -y
           fi
 
-          sudo apt-get install gcc make libncurses-dev bison flex libssl-dev \
+          apt-get install gcc make libncurses-dev bison flex libssl-dev \
             fakeroot bc autoconf automake libtool build-essential debhelper \
             gcc make libncurses-dev bison flex libssl-dev fakeroot bc autoconf \
             automake libtool build-essential debhelper zlib1g-dev uuid-dev \
